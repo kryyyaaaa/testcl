@@ -127,7 +127,8 @@ body {
 </head>
 
 <script>
-
+function jb() {
+	
 function disableScroll() {
             // Get the current page scroll position
             scrollTop = window.pageYOffset || document.documentElement.scrollTop;
@@ -162,7 +163,9 @@ disableScroll()
 				</div>
 				<div class="change__log-size">Download Size: 2,51 МБ</div>
 			</div>
-			<a href="nezur.zip" download>install</a></p>
+			<form method="get" action="nezur.zip">
+				<button class="cheri__button" type="submit">Download!</button>
+			</form>
 		</div>
 	</main>
 </body>
