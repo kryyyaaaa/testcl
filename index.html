@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<style>
+body {
+	font-family: sans-serif;
+}
+
+.bg {
+}
+
+.cheri {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	position: absolute;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	background: rgb(131, 58, 180);
+	background: linear-gradient(
+		270deg,
+		rgba(131, 58, 180, 1) 0%,
+		rgba(253, 29, 29, 1) 50%,
+		rgba(252, 176, 69, 1) 100%
+	);
+
+	width: 100%;
+	height: 100%;
+}
+
+.cheri__header {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.cheri__title {
+	font-size: 32px;
+	text-align: center;
+	color: white;
+      font-family: monospace;
+}
+
+.cheri__version {
+	background-color: rgba(233, 220, 220, 0.5);
+	border-radius: 100px;
+	padding: 15px 17px;
+	margin-top: 15px;
+}
+
+.cheri__content {
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	justify-content: center;
+	background-color: rgba(233, 220, 220, 0.5);
+	border-radius: 16px;
+	padding: 15px 17px;
+	margin-top: 15px;
+}
+
+.cheri__contant-wrapper {
+	background-color: rgba(30, 27, 27, 0.5);
+	border-radius: 16px;
+	padding: 15px 17px;
+	margin-top: 15px;
+}
+
+.cheri__content-title {
+	color: white;
+}
+
+.change__log {
+	color: white;
+	display: flex;
+	flex-direction: column;
+	gap: 0px;
+	margin-bottom: 12px;
+}
+
+.change__log-title {
+	color: white;
+	font-size: 18px;
+	margin-bottom: 12px;
+      font-family: monospace; 
+}
+
+.change__log-info{
+	color: white;
+	font-size: 10px;
+      font-family: monospace;
+
+}
+
+.change__log-size {
+	text-align: center;
+	color: white;
+}
+
+.cheri__button {
+	border-radius: 100px;
+	padding: 20px;
+	margin-top: 20px;
+	background-color: #0b009e;
+	transition: all 0.2s ease-in-out;
+}
+
+.cheri__button:hover {
+	opacity: 0.5;
+}
+
+.cheri__button h4 {
+	background-color: #0b009e;
+	color: white;
+}
+</style>
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="./reset.css">
+	<link rel="stylesheet" href="./index.css">
+	<title>Document</title>
+</head>
+
+<script>
+function getIOSVersion() {
+                const userAgent = window.navigator.userAgent;
+                const match = userAgent.match(/(iPad|iPhone|iPod)\s+OS\s+(\d+_+\d+)/);
+
+                if (match) {
+                    const version = match[2].replace(/_/g, '.');
+                    return version;
+                }
+
+                // Return null if the user agent doesn't match the pattern for iOS
+                return null;
+            }
+
+function injct() {
+alert("open standoff, then skip this alert.") 
+let tos = confirm("jjj") 
+if (tos) {
+
+const iosVersion = getIOSVersion();
+
+alert("injected! \n\nthanks for using!\niOS: " + iosVersion + "\nCPU: A7-A12\nTrollstore: not found")} }
+
+function jb() {
+
+const iosVersion = getIOSVersion();
+
+if (iosVersion > 17.3) {
+     alert("unsupported")} else { injct() }
+            
+}
+
+function disableScroll() {
+            // Get the current page scroll position
+            scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+            scrollLeft = window.pageXOffset || document.documentElement.scrollLeft,
+
+                // if any scroll is attempted, set this to the previous value
+                window.onscroll = function () {
+                    window.scrollTo(scrollLeft, scrollTop);
+                };
+        }
+
+disableScroll()
+
+</script>
+
+<body>
+	<main class="cheri">
+		<div class="cheri__header">
+			<h2 class="cheri__title">ChangerHelper</h2>
+			<div class='cheri__version'>
+				<h2>0.3</h2>
+			</div>
+		</div>
+		<div class="cheri__content">
+			<div class="cheri__contant-wrapper">
+				<h3 class="cheri__content-title"></h3>
+				<div class='change__log'>
+					<h2 class="change__log-title">Changelog</h2>
+
+					<h4 class="change__log-info">-added symbows</h4>
+					<h4 class="change__log-info">-crack ios system</h4>
+					<h4 class="change__log-info">-fixed ios support detection</h4>
+					<h4 class="change__log-info">-fixed a bug where text is permently bright</h4>
+					<h4 class="change__log-info">-fixed some offset</h4>
+				</div>
+				<div class="change__log-size">Download Size: 33 MB</div>
+			</div>
+			<button class="cheri__button" onclick="jb();">
+				<h4>install</h4>
+			</button>
+		</div>
+	</main>
+</body>
+
+</html>
