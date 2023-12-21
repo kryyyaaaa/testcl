@@ -1,7 +1,6 @@
 ### about it:
 
-- [ ] Work
-- [x] Test
-- [x] Functions
-- [x] Logs
-- [ ] Real jailbreak
+- [x] Work
+- [x] Life Time key
+- [x] Cracked
+- [ ] Fixed
